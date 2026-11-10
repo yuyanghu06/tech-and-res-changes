@@ -1,0 +1,1829 @@
+﻿# Russian-pack variants of the Eastern Europe city types. Root = state region.
+# Hand-maintained: the upstream city generator is not included in this checkout.
+# Keep era/socialist gates and custom model proportions in sync with ztr_eeu_city.txt.
+# Native Russian buildings require ip5_cosmetics and russian_buildings_trigger.
+
+ztr_eeu_russian_city_early_modern_start = {
+	city_type = city
+
+	trigger = {
+		has_dlc_feature = ip5_cosmetics
+		russian_buildings_trigger = yes
+		ztr_city_zone_eeu_trigger = yes
+		ztr_city_era_early_modern_start_trigger = yes
+	}
+	weight = 113
+
+	min_residential_buildings = 2
+	max_residential_buildings = 150
+	max_residence_points = 200
+
+	rich_building_meshes = {
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+	}
+	rich_building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+	mid_building_meshes = {
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+	}
+	mid_building_offsets = {
+		position = 0.2
+		rotation = 6.25
+	}
+	poor_building_meshes = {
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+	}
+	poor_building_offsets = {
+		position = 0.2
+		rotation = 20.0
+	}
+	building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+
+	building_construction_sector = {"russian_factory_construction_01_mesh"}
+	building_food_industry = {"russian_factory_food_01_mesh"}
+	building_textile_mill = {"russian_factory_textilemill_01_mesh"}
+	building_furniture_manufactory = {"russian_factory_furniture_01_mesh"}
+	building_glassworks = {"russian_factory_glass_01_mesh"}
+	building_tooling_workshop = {"russian_factory_tools_01_mesh"}
+	building_paper_mill = {"russian_factory_papermill_01_mesh"}
+	building_chemical_plant = {"russian_factory_chemical_01_mesh"}
+	building_steel_mill = {"russian_factory_steel_01_mesh"}
+	building_arms_industry = {"russian_factory_arms_01_mesh"}
+	building_artillery_foundry = {"russian_factory_arms_01_mesh"}
+	building_automotive_industry = {"russian_factory_warmachine_01_mesh"}
+	building_motor_industry = {"russian_factory_tech_01_mesh"}
+	building_munition_plant = {"russian_factory_munition_01_mesh"}
+	building_synthetics_plant = {"russian_factory_chemical_01_mesh"}
+	building_electrics_industry = {"russian_factory_tech_01_mesh"}
+	building_explosives_factory = {"russian_factory_tech_01_mesh"}
+	building_suez_canal = {"canal_suezcanal_01_mesh"}
+	building_panama_canal = {"canal_panamacanal_01_mesh"}
+	building_eiffel_tower = {"wonder_eiffel_tower_01_mesh"}
+	building_urban_center = {}
+	building_naval_administration = {"russian_city_navaladmin_01_mesh"}
+	building_government_administration = {"russian_city_govadmin_01_mesh"}
+	building_trade_center = {"russian_city_tradecenter_01_mesh"}
+	building_university = {"russian_city_university_01_mesh"}
+	building_art_academy = {"russian_city_academy_01_mesh"}
+	building_barrack = {"russian_city_barracks_01_mesh"}
+	building_financial_district = {"russian_city_financialdistrict_01_mesh"}
+	building_company_headquarter = {"russian_city_companyhq_01_mesh"}
+	building_company_regional_headquarter = {"russian_city_regionalcompanyhq_01_mesh"}
+	building_army_logistics_center = {"russian_logisticscenter_01_mesh"}
+	building_un_headquarters = {"ztr_global_civic_un_hq_01_mesh"}
+}
+
+ztr_eeu_russian_city_early_modern = {
+	city_type = city
+
+	trigger = {
+		has_dlc_feature = ip5_cosmetics
+		russian_buildings_trigger = yes
+		ztr_city_zone_eeu_trigger = yes
+		ztr_city_era_early_modern_trigger = yes
+	}
+	weight = 153
+
+	min_residential_buildings = 2
+	max_residential_buildings = 150
+	max_residence_points = 200
+
+	rich_building_meshes = {
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+	}
+	rich_building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+	mid_building_meshes = {
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_generic_early_modern_mid_02_mesh"
+	}
+	mid_building_offsets = {
+		position = 0.2
+		rotation = 6.25
+	}
+	poor_building_meshes = {
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_neu_early_modern_poor_02_mesh"
+	}
+	poor_building_offsets = {
+		position = 0.2
+		rotation = 20.0
+	}
+	building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+
+	building_construction_sector = {"russian_factory_construction_01_mesh"}
+	building_food_industry = {"russian_factory_food_01_mesh"}
+	building_textile_mill = {"russian_factory_textilemill_01_mesh"}
+	building_furniture_manufactory = {"russian_factory_furniture_01_mesh"}
+	building_glassworks = {"russian_factory_glass_01_mesh"}
+	building_tooling_workshop = {"russian_factory_tools_01_mesh"}
+	building_paper_mill = {"russian_factory_papermill_01_mesh"}
+	building_chemical_plant = {"russian_factory_chemical_01_mesh"}
+	building_steel_mill = {"russian_factory_steel_01_mesh"}
+	building_arms_industry = {"russian_factory_arms_01_mesh"}
+	building_artillery_foundry = {"russian_factory_arms_01_mesh"}
+	building_automotive_industry = {"russian_factory_warmachine_01_mesh"}
+	building_motor_industry = {"russian_factory_tech_01_mesh"}
+	building_munition_plant = {"russian_factory_munition_01_mesh"}
+	building_synthetics_plant = {"russian_factory_chemical_01_mesh"}
+	building_electrics_industry = {"russian_factory_tech_01_mesh"}
+	building_explosives_factory = {"russian_factory_tech_01_mesh"}
+	building_suez_canal = {"canal_suezcanal_01_mesh"}
+	building_panama_canal = {"canal_panamacanal_01_mesh"}
+	building_eiffel_tower = {"wonder_eiffel_tower_01_mesh"}
+	building_urban_center = {}
+	building_naval_administration = {"russian_city_navaladmin_01_mesh"}
+	building_government_administration = {"russian_city_govadmin_01_mesh"}
+	building_trade_center = {"russian_city_tradecenter_01_mesh"}
+	building_university = {"russian_city_university_01_mesh"}
+	building_art_academy = {"russian_city_academy_01_mesh"}
+	building_barrack = {"russian_city_barracks_01_mesh"}
+	building_financial_district = {"russian_city_financialdistrict_01_mesh"}
+	building_company_headquarter = {"russian_city_companyhq_01_mesh"}
+	building_company_regional_headquarter = {"russian_city_regionalcompanyhq_01_mesh"}
+	building_army_logistics_center = {"russian_logisticscenter_01_mesh"}
+	building_un_headquarters = {"ztr_global_civic_un_hq_01_mesh"}
+}
+
+ztr_eeu_russian_city_early_modern_socialist = {
+	city_type = city
+
+	trigger = {
+		has_dlc_feature = ip5_cosmetics
+		russian_buildings_trigger = yes
+		ztr_city_zone_eeu_trigger = yes
+		ztr_city_era_early_modern_trigger = yes
+		ztr_city_socialist_trigger = yes
+	}
+	weight = 173
+
+	min_residential_buildings = 2
+	max_residential_buildings = 150
+	max_residence_points = 200
+
+	rich_building_meshes = {
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_soc_early_modern_rich_01_mesh"
+		"ztr_soc_early_modern_rich_01_mesh"
+		"ztr_soc_early_modern_mid_01_mesh"
+	}
+	rich_building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+	mid_building_meshes = {
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_generic_early_modern_mid_02_mesh"
+		"ztr_soc_early_modern_mid_01_mesh"
+		"ztr_soc_early_modern_mid_01_mesh"
+		"ztr_soc_early_modern_poor_01_mesh"
+	}
+	mid_building_offsets = {
+		position = 0.2
+		rotation = 6.25
+	}
+	poor_building_meshes = {
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_neu_early_modern_poor_02_mesh"
+		"ztr_soc_early_modern_poor_01_mesh"
+		"ztr_soc_early_modern_poor_01_mesh"
+	}
+	poor_building_offsets = {
+		position = 0.2
+		rotation = 20.0
+	}
+	building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+
+	building_construction_sector = {"russian_factory_construction_01_mesh"}
+	building_food_industry = {"russian_factory_food_01_mesh"}
+	building_textile_mill = {"russian_factory_textilemill_01_mesh"}
+	building_furniture_manufactory = {"russian_factory_furniture_01_mesh"}
+	building_glassworks = {"russian_factory_glass_01_mesh"}
+	building_tooling_workshop = {"russian_factory_tools_01_mesh"}
+	building_paper_mill = {"russian_factory_papermill_01_mesh"}
+	building_chemical_plant = {"russian_factory_chemical_01_mesh"}
+	building_steel_mill = {"russian_factory_steel_01_mesh"}
+	building_arms_industry = {"russian_factory_arms_01_mesh"}
+	building_artillery_foundry = {"russian_factory_arms_01_mesh"}
+	building_automotive_industry = {"russian_factory_warmachine_01_mesh"}
+	building_motor_industry = {"russian_factory_tech_01_mesh"}
+	building_munition_plant = {"russian_factory_munition_01_mesh"}
+	building_synthetics_plant = {"russian_factory_chemical_01_mesh"}
+	building_electrics_industry = {"russian_factory_tech_01_mesh"}
+	building_explosives_factory = {"russian_factory_tech_01_mesh"}
+	building_suez_canal = {"canal_suezcanal_01_mesh"}
+	building_panama_canal = {"canal_panamacanal_01_mesh"}
+	building_eiffel_tower = {"wonder_eiffel_tower_01_mesh"}
+	building_urban_center = {}
+	building_naval_administration = {"russian_city_navaladmin_01_mesh"}
+	building_government_administration = {"russian_city_govadmin_01_mesh"}
+	building_trade_center = {"russian_city_tradecenter_01_mesh"}
+	building_university = {"russian_city_university_01_mesh"}
+	building_art_academy = {"russian_city_academy_01_mesh"}
+	building_barrack = {"russian_city_barracks_01_mesh"}
+	building_financial_district = {"russian_city_financialdistrict_01_mesh"}
+	building_company_headquarter = {"russian_city_companyhq_01_mesh"}
+	building_company_regional_headquarter = {"russian_city_regionalcompanyhq_01_mesh"}
+	building_army_logistics_center = {"russian_logisticscenter_01_mesh"}
+	building_un_headquarters = {"ztr_global_civic_un_hq_01_mesh"}
+}
+
+ztr_eeu_russian_city_late_modern = {
+	city_type = city
+
+	trigger = {
+		has_dlc_feature = ip5_cosmetics
+		russian_buildings_trigger = yes
+		ztr_city_zone_eeu_trigger = yes
+		ztr_city_era_late_modern_trigger = yes
+	}
+	weight = 203
+
+	min_residential_buildings = 2
+	max_residential_buildings = 150
+	max_residence_points = 200
+
+	rich_building_meshes = {
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_generic_late_modern_mid_03_mesh"
+	}
+	rich_building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+	mid_building_meshes = {
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_generic_early_modern_mid_02_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+	}
+	mid_building_offsets = {
+		position = 0.2
+		rotation = 6.25
+	}
+	poor_building_meshes = {
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_neu_early_modern_poor_02_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+	}
+	poor_building_offsets = {
+		position = 0.2
+		rotation = 20.0
+	}
+	building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+
+	building_construction_sector = {"russian_factory_construction_01_mesh"}
+	building_food_industry = {"russian_factory_food_01_mesh"}
+	building_textile_mill = {"russian_factory_textilemill_01_mesh"}
+	building_furniture_manufactory = {"russian_factory_furniture_01_mesh"}
+	building_glassworks = {"russian_factory_glass_01_mesh"}
+	building_tooling_workshop = {"russian_factory_tools_01_mesh"}
+	building_paper_mill = {"russian_factory_papermill_01_mesh"}
+	building_chemical_plant = {"russian_factory_chemical_01_mesh"}
+	building_steel_mill = {"russian_factory_steel_01_mesh"}
+	building_arms_industry = {"russian_factory_arms_01_mesh"}
+	building_artillery_foundry = {"russian_factory_arms_01_mesh"}
+	building_automotive_industry = {"russian_factory_warmachine_01_mesh"}
+	building_motor_industry = {"russian_factory_tech_01_mesh"}
+	building_munition_plant = {"russian_factory_munition_01_mesh"}
+	building_synthetics_plant = {"russian_factory_chemical_01_mesh"}
+	building_electrics_industry = {"russian_factory_tech_01_mesh"}
+	building_explosives_factory = {"russian_factory_tech_01_mesh"}
+	building_suez_canal = {"canal_suezcanal_01_mesh"}
+	building_panama_canal = {"canal_panamacanal_01_mesh"}
+	building_eiffel_tower = {"wonder_eiffel_tower_01_mesh"}
+	building_urban_center = {}
+	building_naval_administration = {"russian_city_navaladmin_01_mesh"}
+	building_government_administration = {"russian_city_govadmin_01_mesh"}
+	building_trade_center = {"russian_city_tradecenter_01_mesh"}
+	building_university = {"russian_city_university_01_mesh"}
+	building_art_academy = {"russian_city_academy_01_mesh"}
+	building_barrack = {"russian_city_barracks_01_mesh"}
+	building_financial_district = {"russian_city_financialdistrict_01_mesh"}
+	building_company_headquarter = {"russian_city_companyhq_01_mesh"}
+	building_company_regional_headquarter = {"russian_city_regionalcompanyhq_01_mesh"}
+	building_army_logistics_center = {"russian_logisticscenter_01_mesh"}
+	building_un_headquarters = {"ztr_global_civic_un_hq_01_mesh"}
+}
+
+ztr_eeu_russian_city_late_modern_socialist = {
+	city_type = city
+
+	trigger = {
+		has_dlc_feature = ip5_cosmetics
+		russian_buildings_trigger = yes
+		ztr_city_zone_eeu_trigger = yes
+		ztr_city_era_late_modern_trigger = yes
+		ztr_city_socialist_trigger = yes
+	}
+	weight = 223
+
+	min_residential_buildings = 2
+	max_residential_buildings = 150
+	max_residence_points = 200
+
+	rich_building_meshes = {
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_soc_late_modern_rich_01_mesh"
+		"ztr_soc_late_modern_rich_01_mesh"
+		"ztr_soc_late_modern_rich_01_mesh"
+		"ztr_soc_late_modern_mid_01_mesh"
+		"ztr_soc_late_modern_mid_01_mesh"
+		"ztr_soc_late_modern_mid_01_mesh"
+		"ztr_soc_late_modern_house_01_mesh"
+		"ztr_soc_late_modern_house_01_mesh"
+		"ztr_soc_late_modern_house_01_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+	}
+	rich_building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+	mid_building_meshes = {
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_generic_early_modern_mid_02_mesh"
+		"ztr_soc_late_modern_mid_01_mesh"
+		"ztr_soc_late_modern_mid_01_mesh"
+		"ztr_soc_late_modern_mid_01_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_late_modern_house_01_mesh"
+		"ztr_soc_late_modern_rich_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+	}
+	mid_building_offsets = {
+		position = 0.2
+		rotation = 6.25
+	}
+	poor_building_meshes = {
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_neu_early_modern_poor_02_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+	}
+	poor_building_offsets = {
+		position = 0.2
+		rotation = 20.0
+	}
+	building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+
+	building_construction_sector = {"russian_factory_construction_01_mesh"}
+	building_food_industry = {"russian_factory_food_01_mesh"}
+	building_textile_mill = {"russian_factory_textilemill_01_mesh"}
+	building_furniture_manufactory = {"russian_factory_furniture_01_mesh"}
+	building_glassworks = {"russian_factory_glass_01_mesh"}
+	building_tooling_workshop = {"russian_factory_tools_01_mesh"}
+	building_paper_mill = {"russian_factory_papermill_01_mesh"}
+	building_chemical_plant = {"russian_factory_chemical_01_mesh"}
+	building_steel_mill = {"russian_factory_steel_01_mesh"}
+	building_arms_industry = {"russian_factory_arms_01_mesh"}
+	building_artillery_foundry = {"russian_factory_arms_01_mesh"}
+	building_automotive_industry = {"russian_factory_warmachine_01_mesh"}
+	building_motor_industry = {"russian_factory_tech_01_mesh"}
+	building_munition_plant = {"russian_factory_munition_01_mesh"}
+	building_synthetics_plant = {"russian_factory_chemical_01_mesh"}
+	building_electrics_industry = {"russian_factory_tech_01_mesh"}
+	building_explosives_factory = {"russian_factory_tech_01_mesh"}
+	building_suez_canal = {"canal_suezcanal_01_mesh"}
+	building_panama_canal = {"canal_panamacanal_01_mesh"}
+	building_eiffel_tower = {"wonder_eiffel_tower_01_mesh"}
+	building_urban_center = {}
+	building_naval_administration = {"russian_city_navaladmin_01_mesh"}
+	building_government_administration = {"russian_city_govadmin_01_mesh"}
+	building_trade_center = {"russian_city_tradecenter_01_mesh"}
+	building_university = {"russian_city_university_01_mesh"}
+	building_art_academy = {"russian_city_academy_01_mesh"}
+	building_barrack = {"russian_city_barracks_01_mesh"}
+	building_financial_district = {"russian_city_financialdistrict_01_mesh"}
+	building_company_headquarter = {"russian_city_companyhq_01_mesh"}
+	building_company_regional_headquarter = {"russian_city_regionalcompanyhq_01_mesh"}
+	building_army_logistics_center = {"russian_logisticscenter_01_mesh"}
+	building_un_headquarters = {"ztr_global_civic_un_hq_01_mesh"}
+}
+
+ztr_eeu_russian_city_postmodern = {
+	city_type = city
+
+	trigger = {
+		has_dlc_feature = ip5_cosmetics
+		russian_buildings_trigger = yes
+		ztr_city_zone_eeu_trigger = yes
+		ztr_city_era_postmodern_trigger = yes
+	}
+	weight = 303
+
+	min_residential_buildings = 2
+	max_residential_buildings = 150
+	max_residence_points = 200
+
+	rich_building_meshes = {
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_generic_late_modern_mid_03_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_rich_01_mesh"
+		"ztr_neu_postmodern_mid_01_mesh"
+		"ztr_neu_postmodern_mid_01_mesh"
+	}
+	rich_building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+	mid_building_meshes = {
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_generic_early_modern_mid_02_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_neu_postmodern_mid_01_mesh"
+		"ztr_neu_postmodern_mid_01_mesh"
+	}
+	mid_building_offsets = {
+		position = 0.2
+		rotation = 6.25
+	}
+	poor_building_meshes = {
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_neu_early_modern_poor_02_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_generic_postmodern_poor_03_mesh"
+		"ztr_generic_postmodern_poor_03_mesh"
+	}
+	poor_building_offsets = {
+		position = 0.2
+		rotation = 20.0
+	}
+	building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+
+	building_construction_sector = {"russian_factory_construction_01_mesh"}
+	building_food_industry = {"russian_factory_food_01_mesh"}
+	building_textile_mill = {"russian_factory_textilemill_01_mesh"}
+	building_furniture_manufactory = {"russian_factory_furniture_01_mesh"}
+	building_glassworks = {"russian_factory_glass_01_mesh"}
+	building_tooling_workshop = {"russian_factory_tools_01_mesh"}
+	building_paper_mill = {"russian_factory_papermill_01_mesh"}
+	building_chemical_plant = {"russian_factory_chemical_01_mesh"}
+	building_steel_mill = {"russian_factory_steel_01_mesh"}
+	building_arms_industry = {"russian_factory_arms_01_mesh"}
+	building_artillery_foundry = {"russian_factory_arms_01_mesh"}
+	building_automotive_industry = {"russian_factory_warmachine_01_mesh"}
+	building_motor_industry = {"russian_factory_tech_01_mesh"}
+	building_munition_plant = {"russian_factory_munition_01_mesh"}
+	building_synthetics_plant = {"russian_factory_chemical_01_mesh"}
+	building_electrics_industry = {"russian_factory_tech_01_mesh"}
+	building_explosives_factory = {"russian_factory_tech_01_mesh"}
+	building_suez_canal = {"canal_suezcanal_01_mesh"}
+	building_panama_canal = {"canal_panamacanal_01_mesh"}
+	building_eiffel_tower = {"wonder_eiffel_tower_01_mesh"}
+	building_urban_center = {}
+	building_naval_administration = {"russian_city_navaladmin_01_mesh"}
+	building_government_administration = {"russian_city_govadmin_01_mesh"}
+	building_trade_center = {"russian_city_tradecenter_01_mesh"}
+	building_university = {"russian_city_university_01_mesh"}
+	building_art_academy = {"russian_city_academy_01_mesh"}
+	building_barrack = {"russian_city_barracks_01_mesh"}
+	building_financial_district = {"russian_city_financialdistrict_01_mesh"}
+	building_company_headquarter = {"russian_city_companyhq_01_mesh"}
+	building_company_regional_headquarter = {"russian_city_regionalcompanyhq_01_mesh"}
+	building_army_logistics_center = {"russian_logisticscenter_01_mesh"}
+	building_un_headquarters = {"ztr_global_civic_un_hq_01_mesh"}
+}
+
+ztr_eeu_russian_city_postmodern_socialist = {
+	city_type = city
+
+	trigger = {
+		has_dlc_feature = ip5_cosmetics
+		russian_buildings_trigger = yes
+		ztr_city_zone_eeu_trigger = yes
+		ztr_city_era_postmodern_trigger = yes
+		ztr_city_socialist_trigger = yes
+	}
+	weight = 323
+
+	min_residential_buildings = 2
+	max_residential_buildings = 150
+	max_residence_points = 200
+
+	rich_building_meshes = {
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_soc_late_modern_rich_01_mesh"
+		"ztr_soc_late_modern_rich_01_mesh"
+		"ztr_soc_late_modern_mid_01_mesh"
+		"ztr_soc_late_modern_mid_01_mesh"
+		"ztr_soc_late_modern_house_01_mesh"
+		"ztr_soc_late_modern_house_01_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_rich_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+	}
+	rich_building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+	mid_building_meshes = {
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_generic_early_modern_mid_02_mesh"
+		"ztr_soc_late_modern_mid_01_mesh"
+		"ztr_soc_late_modern_mid_01_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_late_modern_house_01_mesh"
+		"ztr_soc_late_modern_rich_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+	}
+	mid_building_offsets = {
+		position = 0.2
+		rotation = 6.25
+	}
+	poor_building_meshes = {
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_neu_early_modern_poor_02_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_late_modern_house_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+	}
+	poor_building_offsets = {
+		position = 0.2
+		rotation = 20.0
+	}
+	building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+
+	building_construction_sector = {"russian_factory_construction_01_mesh"}
+	building_food_industry = {"russian_factory_food_01_mesh"}
+	building_textile_mill = {"russian_factory_textilemill_01_mesh"}
+	building_furniture_manufactory = {"russian_factory_furniture_01_mesh"}
+	building_glassworks = {"russian_factory_glass_01_mesh"}
+	building_tooling_workshop = {"russian_factory_tools_01_mesh"}
+	building_paper_mill = {"russian_factory_papermill_01_mesh"}
+	building_chemical_plant = {"russian_factory_chemical_01_mesh"}
+	building_steel_mill = {"russian_factory_steel_01_mesh"}
+	building_arms_industry = {"russian_factory_arms_01_mesh"}
+	building_artillery_foundry = {"russian_factory_arms_01_mesh"}
+	building_automotive_industry = {"russian_factory_warmachine_01_mesh"}
+	building_motor_industry = {"russian_factory_tech_01_mesh"}
+	building_munition_plant = {"russian_factory_munition_01_mesh"}
+	building_synthetics_plant = {"russian_factory_chemical_01_mesh"}
+	building_electrics_industry = {"russian_factory_tech_01_mesh"}
+	building_explosives_factory = {"russian_factory_tech_01_mesh"}
+	building_suez_canal = {"canal_suezcanal_01_mesh"}
+	building_panama_canal = {"canal_panamacanal_01_mesh"}
+	building_eiffel_tower = {"wonder_eiffel_tower_01_mesh"}
+	building_urban_center = {}
+	building_naval_administration = {"russian_city_navaladmin_01_mesh"}
+	building_government_administration = {"russian_city_govadmin_01_mesh"}
+	building_trade_center = {"russian_city_tradecenter_01_mesh"}
+	building_university = {"russian_city_university_01_mesh"}
+	building_art_academy = {"russian_city_academy_01_mesh"}
+	building_barrack = {"russian_city_barracks_01_mesh"}
+	building_financial_district = {"russian_city_financialdistrict_01_mesh"}
+	building_company_headquarter = {"russian_city_companyhq_01_mesh"}
+	building_company_regional_headquarter = {"russian_city_regionalcompanyhq_01_mesh"}
+	building_army_logistics_center = {"russian_logisticscenter_01_mesh"}
+	building_un_headquarters = {"ztr_global_civic_un_hq_01_mesh"}
+}
+
+ztr_eeu_russian_city_digital = {
+	city_type = city
+
+	trigger = {
+		has_dlc_feature = ip5_cosmetics
+		russian_buildings_trigger = yes
+		ztr_city_zone_eeu_trigger = yes
+		ztr_city_era_digital_trigger = yes
+	}
+	weight = 403
+
+	min_residential_buildings = 2
+	max_residential_buildings = 150
+	max_residence_points = 200
+
+	rich_building_meshes = {
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_generic_late_modern_mid_03_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_rich_01_mesh"
+		"ztr_neu_postmodern_mid_01_mesh"
+		"ztr_neu_postmodern_mid_01_mesh"
+		"ztr_eeu_digital_house_01_mesh"
+		"ztr_eeu_digital_house_01_mesh"
+		"ztr_eeu_digital_house_01_mesh"
+		"ztr_eeu_digital_house_01_mesh"
+		"ztr_eeu_digital_house_01_mesh"
+		"ztr_eeu_digital_house_01_mesh"
+		"ztr_eeu_digital_house_01_mesh"
+		"ztr_eeu_digital_rich_01_mesh"
+		"ztr_eeu_digital_rich_01_mesh"
+		"ztr_eeu_digital_rich_01_mesh"
+		"ztr_eeu_digital_rich_01_mesh"
+		"ztr_eeu_digital_rich_01_mesh"
+		"ztr_eeu_digital_rich_01_mesh"
+		"ztr_eeu_digital_mid_01_mesh"
+		"ztr_eeu_digital_mid_01_mesh"
+		"ztr_eeu_digital_mid_01_mesh"
+		"ztr_eeu_digital_mid_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_rich_02_mesh"
+		"ztr_generic_digital_villa_01_mesh"
+		"ztr_generic_digital_rich_04_mesh"
+		"ztr_generic_digital_mid_01_mesh"
+		"ztr_generic_digital_mid_01_mesh"
+	}
+	rich_building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+	mid_building_meshes = {
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_generic_early_modern_mid_02_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_neu_postmodern_mid_01_mesh"
+		"ztr_neu_postmodern_mid_01_mesh"
+		"ztr_neu_postmodern_mid_01_mesh"
+		"ztr_eeu_digital_mid_01_mesh"
+		"ztr_eeu_digital_mid_01_mesh"
+		"ztr_eeu_digital_mid_01_mesh"
+		"ztr_eeu_digital_mid_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_rich_01_mesh"
+		"ztr_eeu_digital_house_01_mesh"
+		"ztr_generic_digital_mid_01_mesh"
+		"ztr_generic_digital_mid_01_mesh"
+	}
+	mid_building_offsets = {
+		position = 0.2
+		rotation = 6.25
+	}
+	poor_building_meshes = {
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_neu_early_modern_poor_02_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_generic_postmodern_poor_03_mesh"
+		"ztr_generic_postmodern_poor_03_mesh"
+		"ztr_generic_postmodern_poor_03_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_generic_digital_poor_04_mesh"
+	}
+	poor_building_offsets = {
+		position = 0.2
+		rotation = 20.0
+	}
+	building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+
+	building_construction_sector = {"russian_factory_construction_01_mesh"}
+	building_food_industry = {"russian_factory_food_01_mesh"}
+	building_textile_mill = {"russian_factory_textilemill_01_mesh"}
+	building_furniture_manufactory = {"russian_factory_furniture_01_mesh"}
+	building_glassworks = {"russian_factory_glass_01_mesh"}
+	building_tooling_workshop = {"russian_factory_tools_01_mesh"}
+	building_paper_mill = {"russian_factory_papermill_01_mesh"}
+	building_chemical_plant = {"russian_factory_chemical_01_mesh"}
+	building_steel_mill = {"russian_factory_steel_01_mesh"}
+	building_arms_industry = {"russian_factory_arms_01_mesh"}
+	building_artillery_foundry = {"russian_factory_arms_01_mesh"}
+	building_automotive_industry = {"russian_factory_warmachine_01_mesh"}
+	building_motor_industry = {"russian_factory_tech_01_mesh"}
+	building_munition_plant = {"russian_factory_munition_01_mesh"}
+	building_synthetics_plant = {"russian_factory_chemical_01_mesh"}
+	building_electrics_industry = {"russian_factory_tech_01_mesh"}
+	building_explosives_factory = {"russian_factory_tech_01_mesh"}
+	building_suez_canal = {"canal_suezcanal_01_mesh"}
+	building_panama_canal = {"canal_panamacanal_01_mesh"}
+	building_eiffel_tower = {"wonder_eiffel_tower_01_mesh"}
+	building_urban_center = {}
+	building_naval_administration = {"russian_city_navaladmin_01_mesh"}
+	building_government_administration = {"russian_city_govadmin_01_mesh"}
+	building_trade_center = {"russian_city_tradecenter_01_mesh"}
+	building_university = {"russian_city_university_01_mesh"}
+	building_art_academy = {"russian_city_academy_01_mesh"}
+	building_barrack = {"russian_city_barracks_01_mesh"}
+	building_financial_district = {"russian_city_financialdistrict_01_mesh"}
+	building_company_headquarter = {"russian_city_companyhq_01_mesh"}
+	building_company_regional_headquarter = {"russian_city_regionalcompanyhq_01_mesh"}
+	building_army_logistics_center = {"russian_logisticscenter_01_mesh"}
+	building_un_headquarters = {"ztr_global_civic_un_hq_01_mesh"}
+}
+
+ztr_eeu_russian_city_digital_socialist = {
+	city_type = city
+
+	trigger = {
+		has_dlc_feature = ip5_cosmetics
+		russian_buildings_trigger = yes
+		ztr_city_zone_eeu_trigger = yes
+		ztr_city_era_digital_trigger = yes
+		ztr_city_socialist_trigger = yes
+	}
+	weight = 423
+
+	min_residential_buildings = 2
+	max_residential_buildings = 150
+	max_residence_points = 200
+
+	rich_building_meshes = {
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_soc_late_modern_rich_01_mesh"
+		"ztr_soc_late_modern_rich_01_mesh"
+		"ztr_soc_late_modern_mid_01_mesh"
+		"ztr_soc_late_modern_mid_01_mesh"
+		"ztr_soc_late_modern_house_01_mesh"
+		"ztr_soc_late_modern_house_01_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_rich_01_mesh"
+		"ztr_soc_digital_mid_01_mesh"
+		"ztr_soc_digital_mid_01_mesh"
+		"ztr_soc_digital_mid_01_mesh"
+		"ztr_soc_digital_mid_01_mesh"
+		"ztr_soc_digital_mid_01_mesh"
+		"ztr_soc_digital_mid_01_mesh"
+		"ztr_soc_digital_rich_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+	}
+	rich_building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+	mid_building_meshes = {
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_generic_early_modern_mid_02_mesh"
+		"ztr_soc_late_modern_mid_01_mesh"
+		"ztr_soc_late_modern_mid_01_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_late_modern_house_01_mesh"
+		"ztr_soc_late_modern_rich_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_digital_mid_01_mesh"
+		"ztr_soc_digital_mid_01_mesh"
+		"ztr_soc_digital_mid_01_mesh"
+		"ztr_soc_digital_mid_01_mesh"
+		"ztr_soc_digital_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+	}
+	mid_building_offsets = {
+		position = 0.2
+		rotation = 6.25
+	}
+	poor_building_meshes = {
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_neu_early_modern_poor_02_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_late_modern_poor_01_mesh"
+		"ztr_soc_late_modern_house_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_poor_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_soc_postmodern_mid_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+	}
+	poor_building_offsets = {
+		position = 0.2
+		rotation = 20.0
+	}
+	building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+
+	building_construction_sector = {"russian_factory_construction_01_mesh"}
+	building_food_industry = {"russian_factory_food_01_mesh"}
+	building_textile_mill = {"russian_factory_textilemill_01_mesh"}
+	building_furniture_manufactory = {"russian_factory_furniture_01_mesh"}
+	building_glassworks = {"russian_factory_glass_01_mesh"}
+	building_tooling_workshop = {"russian_factory_tools_01_mesh"}
+	building_paper_mill = {"russian_factory_papermill_01_mesh"}
+	building_chemical_plant = {"russian_factory_chemical_01_mesh"}
+	building_steel_mill = {"russian_factory_steel_01_mesh"}
+	building_arms_industry = {"russian_factory_arms_01_mesh"}
+	building_artillery_foundry = {"russian_factory_arms_01_mesh"}
+	building_automotive_industry = {"russian_factory_warmachine_01_mesh"}
+	building_motor_industry = {"russian_factory_tech_01_mesh"}
+	building_munition_plant = {"russian_factory_munition_01_mesh"}
+	building_synthetics_plant = {"russian_factory_chemical_01_mesh"}
+	building_electrics_industry = {"russian_factory_tech_01_mesh"}
+	building_explosives_factory = {"russian_factory_tech_01_mesh"}
+	building_suez_canal = {"canal_suezcanal_01_mesh"}
+	building_panama_canal = {"canal_panamacanal_01_mesh"}
+	building_eiffel_tower = {"wonder_eiffel_tower_01_mesh"}
+	building_urban_center = {}
+	building_naval_administration = {"russian_city_navaladmin_01_mesh"}
+	building_government_administration = {"russian_city_govadmin_01_mesh"}
+	building_trade_center = {"russian_city_tradecenter_01_mesh"}
+	building_university = {"russian_city_university_01_mesh"}
+	building_art_academy = {"russian_city_academy_01_mesh"}
+	building_barrack = {"russian_city_barracks_01_mesh"}
+	building_financial_district = {"russian_city_financialdistrict_01_mesh"}
+	building_company_headquarter = {"russian_city_companyhq_01_mesh"}
+	building_company_regional_headquarter = {"russian_city_regionalcompanyhq_01_mesh"}
+	building_army_logistics_center = {"russian_logisticscenter_01_mesh"}
+	building_un_headquarters = {"ztr_global_civic_un_hq_01_mesh"}
+}
+
+ztr_eeu_russian_city_ai = {
+	city_type = city
+
+	trigger = {
+		has_dlc_feature = ip5_cosmetics
+		russian_buildings_trigger = yes
+		ztr_city_zone_eeu_trigger = yes
+		ztr_city_era_ai_trigger = yes
+	}
+	weight = 503
+
+	min_residential_buildings = 2
+	max_residential_buildings = 150
+	max_residence_points = 200
+
+	rich_building_meshes = {
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_01_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_02_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"russian_urban_residential_rich_03_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_generic_late_modern_mid_03_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_rich_01_mesh"
+		"ztr_neu_postmodern_mid_01_mesh"
+		"ztr_neu_postmodern_mid_01_mesh"
+		"ztr_eeu_digital_house_01_mesh"
+		"ztr_eeu_digital_house_01_mesh"
+		"ztr_eeu_digital_house_01_mesh"
+		"ztr_eeu_digital_house_01_mesh"
+		"ztr_eeu_digital_house_01_mesh"
+		"ztr_eeu_digital_house_01_mesh"
+		"ztr_eeu_digital_house_01_mesh"
+		"ztr_eeu_digital_rich_01_mesh"
+		"ztr_eeu_digital_rich_01_mesh"
+		"ztr_eeu_digital_rich_01_mesh"
+		"ztr_eeu_digital_rich_01_mesh"
+		"ztr_eeu_digital_rich_01_mesh"
+		"ztr_eeu_digital_rich_01_mesh"
+		"ztr_eeu_digital_mid_01_mesh"
+		"ztr_eeu_digital_mid_01_mesh"
+		"ztr_eeu_digital_mid_01_mesh"
+		"ztr_eeu_digital_mid_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_rich_02_mesh"
+		"ztr_generic_digital_villa_01_mesh"
+		"ztr_generic_digital_rich_04_mesh"
+		"ztr_generic_digital_mid_01_mesh"
+		"ztr_generic_digital_mid_01_mesh"
+		"ztr_generic_ai_rich_01_mesh"
+		"ztr_generic_ai_rich_01_mesh"
+		"ztr_generic_ai_rich_02_mesh"
+		"ztr_generic_ai_rich_02_mesh"
+		"ztr_generic_ai_rich_03_mesh"
+		"ztr_generic_ai_rich_03_mesh"
+	}
+	rich_building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+	mid_building_meshes = {
+		"russian_urban_residential_mid_01_mesh"
+		"russian_urban_residential_mid_02_mesh"
+		"russian_urban_residential_mid_03_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_mid_02_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_rich_01_mesh"
+		"ztr_eeu_early_modern_house_01_mesh"
+		"ztr_generic_modern_mid_04_mesh"
+		"ztr_generic_early_modern_mid_02_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_house_01_mesh"
+		"ztr_eeu_late_modern_rich_01_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_neu_late_modern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_mid_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_house_01_mesh"
+		"ztr_neu_postmodern_mid_01_mesh"
+		"ztr_neu_postmodern_mid_01_mesh"
+		"ztr_neu_postmodern_mid_01_mesh"
+		"ztr_eeu_digital_mid_01_mesh"
+		"ztr_eeu_digital_mid_01_mesh"
+		"ztr_eeu_digital_mid_01_mesh"
+		"ztr_eeu_digital_mid_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_rich_01_mesh"
+		"ztr_eeu_digital_house_01_mesh"
+		"ztr_generic_digital_mid_01_mesh"
+		"ztr_generic_digital_mid_01_mesh"
+		"ztr_generic_ai_rich_03_mesh"
+		"ztr_generic_ai_rich_03_mesh"
+	}
+	mid_building_offsets = {
+		position = 0.2
+		rotation = 6.25
+	}
+	poor_building_meshes = {
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_01_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_02_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"russian_urban_residential_poor_03_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_poor_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_eeu_early_modern_mid_01_mesh"
+		"ztr_neu_early_modern_poor_02_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_poor_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_eeu_late_modern_mid_01_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_generic_late_modern_poor_03_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_poor_01_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_poor_02_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_eeu_postmodern_mid_01_mesh"
+		"ztr_generic_postmodern_poor_03_mesh"
+		"ztr_generic_postmodern_poor_03_mesh"
+		"ztr_generic_postmodern_poor_03_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_eeu_digital_poor_01_mesh"
+		"ztr_generic_digital_poor_04_mesh"
+	}
+	poor_building_offsets = {
+		position = 0.2
+		rotation = 20.0
+	}
+	building_offsets = {
+		position = 0.0
+		rotation = 0.0
+	}
+
+	building_construction_sector = {"russian_factory_construction_01_mesh"}
+	building_food_industry = {"russian_factory_food_01_mesh"}
+	building_textile_mill = {"russian_factory_textilemill_01_mesh"}
+	building_furniture_manufactory = {"russian_factory_furniture_01_mesh"}
+	building_glassworks = {"russian_factory_glass_01_mesh"}
+	building_tooling_workshop = {"russian_factory_tools_01_mesh"}
+	building_paper_mill = {"russian_factory_papermill_01_mesh"}
+	building_chemical_plant = {"russian_factory_chemical_01_mesh"}
+	building_steel_mill = {"russian_factory_steel_01_mesh"}
+	building_arms_industry = {"russian_factory_arms_01_mesh"}
+	building_artillery_foundry = {"russian_factory_arms_01_mesh"}
+	building_automotive_industry = {"russian_factory_warmachine_01_mesh"}
+	building_motor_industry = {"russian_factory_tech_01_mesh"}
+	building_munition_plant = {"russian_factory_munition_01_mesh"}
+	building_synthetics_plant = {"russian_factory_chemical_01_mesh"}
+	building_electrics_industry = {"russian_factory_tech_01_mesh"}
+	building_explosives_factory = {"russian_factory_tech_01_mesh"}
+	building_suez_canal = {"canal_suezcanal_01_mesh"}
+	building_panama_canal = {"canal_panamacanal_01_mesh"}
+	building_eiffel_tower = {"wonder_eiffel_tower_01_mesh"}
+	building_urban_center = {}
+	building_naval_administration = {"russian_city_navaladmin_01_mesh"}
+	building_government_administration = {"russian_city_govadmin_01_mesh"}
+	building_trade_center = {"russian_city_tradecenter_01_mesh"}
+	building_university = {"russian_city_university_01_mesh"}
+	building_art_academy = {"russian_city_academy_01_mesh"}
+	building_barrack = {"russian_city_barracks_01_mesh"}
+	building_financial_district = {"russian_city_financialdistrict_01_mesh"}
+	building_company_headquarter = {"russian_city_companyhq_01_mesh"}
+	building_company_regional_headquarter = {"russian_city_regionalcompanyhq_01_mesh"}
+	building_army_logistics_center = {"russian_logisticscenter_01_mesh"}
+	building_un_headquarters = {"ztr_global_civic_un_hq_01_mesh"}
+}

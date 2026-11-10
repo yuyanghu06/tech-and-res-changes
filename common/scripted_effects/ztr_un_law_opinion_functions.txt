@@ -702,7 +702,8 @@ ztr_un_ai_try_start_possible_vote = {
 
 		# Current Law Check
 		ztr_un_set_current_law_as_considered = yes
-		ztr_un_value_law = yes
+		ztr_un_value_law_prepare_country_context = yes
+		ztr_un_value_law_from_prepared_context = yes
 		set_variable = {
 			name = ztr_un_ai_current_law_value
 			value = var:ztr_un_law_value_total_considered
@@ -710,11 +711,12 @@ ztr_un_ai_try_start_possible_vote = {
 
 		# Possible Law Check
 		ztr_un_set_possible_law_as_considered = yes
-		ztr_un_value_law = yes
+		ztr_un_value_law_from_prepared_context = yes
 		set_variable = {
 			name = ztr_un_ai_possible_law_value
 			value = var:ztr_un_law_value_total_considered
 		}
+		ztr_un_value_law_clear_country_context = yes
 
 		if = {
 			limit = {
@@ -777,18 +779,20 @@ ztr_un_ai_take_neutral_vote_position = {
 		}
 
 		ztr_un_set_current_vote_law_as_considered = yes
-		ztr_un_value_law = yes
+		ztr_un_value_law_prepare_country_context = yes
+		ztr_un_value_law_from_prepared_context = yes
 		set_variable = {
 			name = ztr_un_ai_vote_current_law_value
 			value = var:ztr_un_law_value_total_considered
 		}
 
 		ztr_un_set_vote_proposal_as_considered = yes
-		ztr_un_value_law = yes
+		ztr_un_value_law_from_prepared_context = yes
 		set_variable = {
 			name = ztr_un_ai_vote_proposed_law_value
 			value = var:ztr_un_law_value_total_considered
 		}
+		ztr_un_value_law_clear_country_context = yes
 
 		set_variable = {
 			name = ztr_un_ai_vote_support_margin
@@ -1541,8 +1545,17 @@ ztr_un_value_law_prepare_country_context = {
 	}
 }
 
+# Complete country-scoped entry point for callers scoring one law.
 ztr_un_value_law = {
 	ztr_un_init_governance_laws = yes
+	ztr_un_value_law_prepare_country_context = yes
+	ztr_un_value_law_from_prepared_context = yes
+	ztr_un_value_law_clear_country_context = yes
+}
+
+# Country scope. The caller prepares and clears country inputs around the comparison;
+# score and role variables still reset separately for each considered law.
+ztr_un_value_law_from_prepared_context = {
 	remove_variable = ztr_un_law_value_objective_considered
 	remove_variable = ztr_un_law_value_secret_considered
 	remove_variable = ztr_un_law_value_total_considered
@@ -1559,7 +1572,6 @@ ztr_un_value_law = {
 		name = ztr_un_law_value_total_considered
 		value = 0
 	}
-	ztr_un_value_law_prepare_country_context = yes
 	if = {
 		limit = {
 			has_variable = ztr_un_subject_considered
@@ -5003,6 +5015,11 @@ ztr_un_value_law = {
 			value = -100
 		}
 	}
+	remove_variable = ztr_un_value_law_considered_un_role
+}
+
+# Clear comparison inputs after the final score, retaining its result variables.
+ztr_un_value_law_clear_country_context = {
 	remove_variable = ztr_un_value_law_liberty_balance
 	remove_variable = ztr_un_value_law_liberty_balance_small
 	remove_variable = ztr_un_value_law_liberty_inverse_balance
@@ -5024,5 +5041,4 @@ ztr_un_value_law = {
 	remove_variable = ztr_un_value_law_rights_bloc_balance
 	remove_variable = ztr_un_value_law_rights_bloc_inverse_balance
 	remove_variable = ztr_un_value_law_imperial_stake
-	remove_variable = ztr_un_value_law_considered_un_role
 }
