@@ -26,3 +26,5 @@
 - Implemented the five gameplay-preserving performance cleanups. Independent Tester PASS and Evaluator ACCEPT for code/source checks; fourteen tests pass, including 929 paired cases. Saves, rules, update timing, random choices and prior city/thumbnail work were not changed. In-game loading/tooltips/speed remain unverified. [Changes and evidence](milestones/behavior-preserving-performance/changes.md).
 
 - User requested push. Publishing the tested local state: performance cleanups, prior reviewed Russian city fixes, launcher thumbnail and repository guides. [Publication record](milestones/publish-reviewed-updates/info.md).
+
+- Published reviewed implementation, prior city fixes, thumbnail and guides to origin/main in `2ceab5fd91b85ce3fe4ec15e73a3d7ebc5cff1ae`. Remote commit matched local HEAD and tree was clean before the documentation-only publication record. All14 tests passed before publication; runtime limits are unchanged.

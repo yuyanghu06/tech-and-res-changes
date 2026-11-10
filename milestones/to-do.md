@@ -48,5 +48,5 @@ Performance implementation accepted for code/source checks. Fourteen tests pass;
 ## Publish reviewed mod updates
 
 - [x] Confirm branch/remote, inspect included work, fetch and pass final tests/diff checks.
-- [ ] Commit and push the reviewed local state to origin/main.
-- [ ] Verify remote HEAD and record the publication outcome.
+- [x] Commit and push the reviewed local state to origin/main.
+- [x] Verify remote HEAD and record the publication outcome.

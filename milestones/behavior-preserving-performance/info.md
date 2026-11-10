@@ -15,3 +15,5 @@
 - Verification: original/current arithmetic and effect results match the tested cases; real UN score/preparation bodies remain intact; evaluation counts confirm reduced work. Five-file encoding/structure, unchanged unrelated definitions/cadences/random calls, diff and documentation checks pass. See [changes and evidence](changes.md) and [test scope](../../tests/info.md).
 - Runtime limits: no game launch, saved-campaign load, rendered tooltip check or speed capture. These remain unverified; no performance percentage is claimed. No save, playset, launcher configuration or installed game file was modified.
 - Next action: implementation/source acceptance complete. A later controlled in-game check should load a copied late-game save and measure behavior and timing before claiming a speed gain. Prior city visual checks remain separate.
+
+- Publication: implementation, tests and guides committed and pushed in `2ceab5fd91b85ce3fe4ec15e73a3d7ebc5cff1ae` after the user requested push. Remote origin/main was verified at that commit; no additional gameplay edit occurred during publication.

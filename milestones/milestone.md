@@ -102,8 +102,11 @@
 ## Publication of reviewed updates
 
 - Goal: publish the tested local mod after the user requested push.
-- Active milestone: [publish reviewed updates](publish-reviewed-updates/info.md), preflight passed.
+- Active milestone: [publish reviewed updates](publish-reviewed-updates/info.md), implementation published and remote verified at `2ceab5fd`.
 - Scope: performance cleanups/tests plus earlier reviewed city, thumbnail and repository documentation.
 - Verification: fetched origin/main matches local base; fourteen tests and diff checks pass.
-- Next action: commit and ordinary push to origin/main, then verify remote and clean tree.
+- Next action: publish the documentation-only outcome record and verify final remote/tree status; runtime observations remain separate.
 - [Prepare reviewed mod updates for publication](history/2026-11-10_12-50-23-389429-orchestrator-publication-preflight.md)
+
+- [Publish and verify reviewed mod updates](history/2026-11-10_12-51-10-791895-orchestrator-reviewed-updates-published.md)
+- Publication result: `2ceab5fd91b85ce3fe4ec15e73a3d7ebc5cff1ae` pushed to origin/main; remote SHA matched and tree was clean before this documentation record.
